@@ -1,1 +1,1 @@
-README.md for the ios_test_project
+This is the test project for iOS for the Guru session given by M2Mobi and Appsterdam

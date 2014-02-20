@@ -1,1 +1,1 @@
-README.md for the android_test_project
+This is the test project for Android for the Guru session given by M2Mobi and Appsterdam
