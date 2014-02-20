@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GuruSession</string>
+
+    <!-- List -->
+    <string name="menu_list_visited_only">Visited only</string>
+
+    <!-- Detail screen -->
+    <string name="detail_country_name">%1$s (%2$s)</string>
+    <string name="detail_continent">%1$s (%2$s)</string>
+    <string name="detail_imageurl">http://www.geonames.org/flags/x/%1$s.gif</string>
+
+    <string name="toggle_on">YES</string>
+    <string name="toggle_off">NO</string>
+
+
+</resources>

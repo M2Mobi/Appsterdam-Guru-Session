@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:guru="http://schemas.android.com/apk/res/com.m2mobi.guru">
+    <item
+            android:title="@string/menu_list_visited_only"
+            android:id="@+id/menu_list_myplaces"
+            guru:showAsAction="ifRoom|withText"
+            android:icon="@drawable/ic_menu_myplaces"/>
+</menu>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+        <ImageView
+                android:scaleType="fitXY"
+                android:background="@drawable/dummy_flag"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/detail_flag"/>
+
+        <TextView
+                android:background="#88FFFFFF"
+                android:textColor="#FFFFFF"
+                android:shadowColor="#000000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:id="@+id/detail_countryname"
+                android:layout_gravity="bottom"
+                android:paddingLeft="@dimen/spacing_small"
+                android:layout_width="match_parent"
+                android:text="[country name] ([country code])"
+                android:layout_height="wrap_content"/>
+
+    </FrameLayout>
+
+    <TableLayout
+            android:stretchColumns="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TableRow
+                android:layout_width="match_parent"
+                android:padding="@dimen/spacing_small"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:text="Capital"/>
+
+            <TextView
+                    android:id="@+id/detail_capital"
+                    android:layout_marginLeft="@dimen/spacing_medium"
+                    android:text="[capital]"/>
+
+        </TableRow>
+
+
+        <TableRow
+                android:layout_width="match_parent"
+                android:padding="@dimen/spacing_small"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:text="Continent"/>
+
+            <TextView
+                    android:id="@+id/detail_continent"
+                    android:layout_marginLeft="@dimen/spacing_medium"
+                    android:text="[continent] ([continent abbr])"/>
+
+        </TableRow>
+
+        <TableRow
+                android:layout_width="match_parent"
+                android:padding="@dimen/spacing_small"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:text="Area in km2"/>
+
+            <TextView
+                    android:id="@+id/detail_area"
+                    android:layout_marginLeft="@dimen/spacing_medium"
+                    android:text="[area in km2]"/>
+
+        </TableRow>
+
+        <TableRow
+                android:layout_width="match_parent"
+                android:padding="@dimen/spacing_small"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:text="CurrencyCode"/>
+
+            <TextView
+                    android:id="@+id/detail_currency"
+                    android:layout_marginLeft="@dimen/spacing_medium"
+                    android:text="[currencyCode]"/>
+
+        </TableRow>
+
+        <TableRow
+                android:layout_width="match_parent"
+                android:padding="@dimen/spacing_small"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:text="Language"/>
+
+            <TextView
+                    android:id="@+id/detail_language"
+                    android:layout_marginLeft="@dimen/spacing_medium"
+                    android:text="[language]"/>
+
+        </TableRow>
+
+        <TableRow
+                android:layout_width="match_parent"
+                android:padding="@dimen/spacing_small"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:text="Population"/>
+
+            <TextView
+                    android:id="@+id/detail_population"
+                    android:layout_marginLeft="@dimen/spacing_medium"
+                    android:text="[population]"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:padding="@dimen/spacing_small"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:layout_width="wrap_content"
+                android:text="Visited"
+                android:layout_height="wrap_content"/>
+
+        <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+        <ToggleButton
+                android:textOn="Yes"
+                android:textOff="No"
+                android:layout_width="75dp"
+                android:padding="@dimen/spacing_small"
+                android:layout_height="wrap_content"
+                android:id="@+id/detail_visited"
+                android:checked="false"/>
+
+        <ProgressBar
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/detail_progress"
+                android:indeterminate="false"/>
+
+    </LinearLayout>
+
+    <!--
+    "fipsCode" : "AN",
+    "geonameId" : 3041565,
+    "isoAlpha3" : "AND",
+    "isoNumeric" : "020",
+
+    "north" : 42.65604389629997,
+    "east" : 1.7865427778319827,
+    "south" : 42.42849259876837,
+    "west" : 1.4071867141112762
+    -->
+
+</LinearLayout>
+

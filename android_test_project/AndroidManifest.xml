@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.m2mobi.guru"
+          android:versionCode="1"
+          android:versionName="1.0">
+
+    <uses-sdk
+            android:minSdkVersion="9"
+            android:targetSdkVersion="19"/>
+
+    <!-- Univeral Image Loader -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+            android:name=".GuruApplication"
+            android:theme="@style/Theme.AppCompat.Light"
+            android:label="@string/app_name"
+            android:icon="@drawable/ic_launcher">
+
+        <!-- Calabash -->
+        <uses-permission android:name="android.permission.INTERNET"/>
+
+        <!-- Splash activity -->
+        <activity
+                android:name=".SplashActivity"
+                android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!-- Login activity -->
+        <activity
+                android:name=".LoginActivity"
+                android:label="Login"
+                android:noHistory="true">
+        </activity>
+
+        <!-- List activity -->
+        <activity
+                android:name="CountryListActivity"
+                android:label="Country list">
+        </activity>
+
+        <!-- Detail activity -->
+        <activity
+                android:name=".DetailActivity"
+                android:label="Country detail">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.m2mobi.guru.CountryListActivity"/>
+        </activity>
+    </application>
+</manifest>
