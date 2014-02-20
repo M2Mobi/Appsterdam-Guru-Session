@@ -40,7 +40,7 @@ For automatic setup:
     - `calabash-ios gen`
 
 5. In Xcode, build your project using the <project-name>-cal scheme
-    - ![-cal scheme](scheme.png "-cal scheme")
+    - ![-cal scheme](images/scheme.png "-cal scheme")
 
 6. Run the generated test!
     - `cucumber`
@@ -102,7 +102,7 @@ Instructions:
             1. `Copy items into destination group's folder (if needed)` *is checked* and 
             2.  _only_ your "-cal " target is checked in `Add to targets`.
 
-      ![Linking with calabash.framework](Frameworks.png "Linking with frameworks")
+      ![Linking with calabash.framework](images/Frameworks.png "Linking with frameworks")
     - You must also link you -cal target with `CFNetwork.framework` (unless your production target
       is  already linking with `CFNetwork`). To do this click on your -cal target in XCode. Click on 
       Build Phases, expand Link Binary with Libraries, click `+` to add `CFNetwork.framework`.
@@ -120,7 +120,7 @@ Instructions:
 
 This screenshot is a reference for you build settings.
 
-![Build settings](linker_flags.png "Build settings")
+![Build settings](images/linker_flags.png "Build settings")
 
 
 ### Test that `calabash.framework` is loaded.
@@ -206,7 +206,7 @@ The project file is copied to `project.pbxproj.bak`. In case something goes wron
 
 Setup will modify your xcode project file to use Calabash iOs. You should now have a new Scheme named [target]-cal in Xcode:
 
-![-cal scheme](scheme.png "-cal scheme")
+![-cal scheme](images/scheme.png "-cal scheme")
 
 
 `calabash-ios setup` does the following:
