@@ -1,4 +1,6 @@
-Installation
+(the original README guide is located here. This is an adjusted fork and mostly includes the most important bits for this Guru Session)
+
+Calabash for Android
 ============
 ### Prerequisites
 You need to have Ruby installed. Verify your installation by running ruby -v in a terminal - it should print "ruby 1.8.7" (or higher).
