@@ -12,6 +12,6 @@ Installation instruction [iOS](calabash_ios_installation.md)
 ##Source files
 The source files for Android can be found in the [Android](android_test_project) folder. And the source files for iOS can be found in the [iOS](ios_test_project) folder.
 
-Within both of these folders is a folder called 'feature' where the testin scripts reside.
+After the guru session, we will push all the scripts to this repo.
 
 Enjoy!
